@@ -7,7 +7,7 @@ A Keil uVision project that uses C code to program a TM4C123GH6PM microcontrolle
 
 - Data from one channel is sampled at 200KHz (Max is 1MHz, but needs optimization to reach that level)
 
-- Oversampling is performed to achieve stable ADC readings (Every 200 data points are averaged to get a stable reading)
+- Oversampling is performed to achieve stable ADC readings (Every 200 data points are averaged to get a single stable reading)
 
 - The actual number of data points being outputted from this ADC channel is 1000 samples/sec (1000 Hz)
   - Format of data being sampled from 1 channel and then sent through UART: '50\n'
